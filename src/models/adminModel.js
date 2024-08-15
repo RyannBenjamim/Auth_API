@@ -7,7 +7,12 @@ const adminModel = {
     return {
       status: true,
       code: 200,
-      data: usersDatabase,
+      data: usersDatabase.map((user) => ({
+        id: user.id,
+        username: user.username,
+        email: user.email,
+        role: user.role,
+      })),
     };
   },
 
@@ -18,6 +23,8 @@ const adminModel = {
     if (!user.status) {
       return user;
     }
+
+    user.data.password = undefined;
 
     return {
       status: true,
@@ -73,6 +80,8 @@ const adminModel = {
     // Deletando o usuário
     usersDatabase.slice(user.index, 1);
 
+    user.data.password = undefined;
+    
     return {
       status: true,
       code: 200,
