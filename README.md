@@ -73,7 +73,7 @@ Esta API foi desenvolvida com o objetivo de estudar a criação de APIs de auten
     {
       "data": [
           {
-              "id": "01",
+              "id": "fe286d20-8f06-4f1b-83c0-c0e015d0eb17",
               "username": "Ryan",
               "email": "ryan@gmail.com",
               "role": "admin"
