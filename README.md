@@ -8,7 +8,7 @@
     ```json
     {
       "email": "johndoe@gmail.com",
-      "musics": "john123"
+      "password": "john123"
     }
     ```
   - **Exemplo de Resposta**:
